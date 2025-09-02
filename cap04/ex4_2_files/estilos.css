@@ -1,0 +1,11 @@
+img {
+  float: left;
+  height: 250px;
+  width: 250px;
+}
+h1 {
+  border-bottom-style: inset;
+}
+h3 {
+  color: blue;
+}
