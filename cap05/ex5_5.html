@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Exemplo 5.5</title>
+    <meta name="description" content="Programa contas do Mês" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/estilos1.css" />
+    <link rel="icon" type="image/jpg" href="img/contas_a_pagar.jpg" />
+  </head>
+  <body>
+    <img src="img/contas_a_pagar.jpg" alt="Contas do Mês" class="normal" />
+    <h1>Programa Contas do Mês</h1>
+    <form>
+      <p>
+        Descrição da Conta:
+        <input type="text" id="inDescricao" required />
+      </p>
+      <p>
+        Valor a Pagar R$:
+        <input type="number" id="inValor" step="0.01" required />
+      </p>
+      <input type="submit" value="Registrar Conta" />
+    </form>
+    <pre id="outResp1"></pre>
+    <pre id="outResp2"></pre>
+    <script src="js/ex5_5.js" async defer></script>
+  </body>
+</html>
