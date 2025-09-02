@@ -1,0 +1,8 @@
+<meta charset="urt-8">
+<script>
+    const preco = Number(prompt("Valor do Produto R$:")) // lê o preço do produto
+    const qntParcela = Number(prompt("Quantas parcelas quer dividir:")) //lê a quantidade de parcelas que o cliente quer parcelar
+    const avista = preco - (preco * 0.10) //calcula a % de desconto a vista
+    const divisao = preco/qntParcela //calcula o valor dividido 
+    alert(`Preço do produto sem desconto R$: ${preco.toFixed(2)} \nPreço de à Vista (10% de Desconto) R$ ${avista.toFixed(2)} \nDividido em ${qntParcela} parcelas de R$ ${divisao.toFixed(2)}`)
+</script>

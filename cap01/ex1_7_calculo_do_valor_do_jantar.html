@@ -1,0 +1,7 @@
+<meta charset="urt-8">
+<script>
+    const valorDoJantar = Number(prompt("Qual o valor do Jantar R$:")) //lê o valor do jantar
+    const taxaDoGacom = (valorDoJantar*10)/100 // ou valorDoJantar*0.10 (calcula a %)
+    const totalAPagar = valorDoJantar + taxaDoGacom
+    alert(`Total a Pagar:\nValor do jantar R$: ${valorDoJantar.toFixed(2)} + Taxa do garçom (10%) R$: ${taxaDoGacom.toFixed(2)} = R$ ${totalAPagar.toFixed(2)}`) // \n quebra a linha já o método toFixed(2) contém 2 casas decimais
+</script>
