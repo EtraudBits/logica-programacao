@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jockey Club</title>
+    <meta name="description" content="Jockey Club" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/cap11/css/estilo.css" />
+    <link rel="icon" href="/cap11/img/jockey club.jpg" type="image/jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="/cap11/img/jockey club.jpg"
+            alt="Jockey"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-sm-8">
+          <h1>Jockey Club - Controle de Apostas</h1>
+          <form>
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="inCavalo">Nº Cavalo:</label>
+                <input
+                  type="number"
+                  min="1"
+                  class="form-control"
+                  id="inCavalo"
+                  required
+                  autofocus
+                />
+              </div>
+              <div class="col-sm-6">
+                <h5 id="outCavalo" class="mt-4"></h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="inAposta">Aposta R$:</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  min="1"
+                  step="0.5"
+                  id="inValor"
+                  required
+                />
+              </div>
+              <div class="col-sm-6">
+                <input
+                  type="submit"
+                  class="btn btn-primary mt-4"
+                  value="Aposta"
+                  id="btApostar"
+                />
+                <input
+                  type="button"
+                  class="btn btn-warning mt-4"
+                  value="Resumo"
+                  id="btResumo"
+                />
+                <input
+                  type="button"
+                  class="btn btn-success mt-4"
+                  value="Ganhador"
+                  id="btGanhador"
+                />
+                <input
+                  type="button"
+                  class="btn btn-danger mt-4"
+                  value="Novo Páreo"
+                  id="btNovo"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/cap11/js/ex11_1.js"></script>
+  </body>
+</html>
