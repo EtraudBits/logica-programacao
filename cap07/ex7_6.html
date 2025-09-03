@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Programa validar Senha</title>
+    <meta name="description" content="Validar Senha" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" href="img/senhas.jpg" type="image/jpg" />
+  </head>
+  <body>
+    <img src="img/senhas.jpg" alt="Validar Senha" class="padrao" />
+    <h1>Programa Validar Senha</h1>
+    <form>
+      <p>
+        <!-- deve se usar type="password" quando for usar senhas, vamos usar text só para validar o exemplo-->
+        Senha:
+        <input
+          type="text"
+          id="inSenha"
+          name="senha"
+          min="8"
+          max="15"
+          required
+        />
+      </p>
+      <p><input type="submit" value="Verificar Validade" /></p>
+    </form>
+    <h3></h3>
+    <script src="js/ex7_6.js" async defer></script>
+  </body>
+</html>

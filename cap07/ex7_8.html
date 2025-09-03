@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Programa Caixa da Loja</title>
+    <meta name="description" content="Caixa da Loja" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" href="img/caixa_da_loja.jpg" type="image/jpg" />
+  </head>
+  <body>
+    <img src="img/caixa_da_loja.jpg" alt="Caixa da Loja" class="img" />
+    <h1>Programa Caixa da Loja</h1>
+    <form>
+      <p>
+        Data de Vencimento:
+        <input type="date" id="inDataVenc" required />
+        <h3></h3>
+      </p>
+
+      <p>
+        Valor da Conta R$:
+        <input
+          type="number"
+          id="inValor"
+          min="0"
+          step="0.01"
+          class="alinha-direita"
+          required
+        />
+        <input type="submit" value="Calcular Multa e Juros" />
+      </p>
+      <p>
+        Valor da Multa:
+        <!--atributo readonly: torna o campo espaço destinado apenas à leitura de dados-->
+        <input type="number" id="outMulta" class="alinha-direita" readonly />
+      </p>
+      <p>
+        Valor do Juros R$:
+        <input type="number" id="outJuros" class="alinha-direita" readonly />
+      </p>
+      <p>
+        Total a Pagar:
+        <input type="number" id="outTotal" class="alinha-direita" readonly />
+        <input type="reset" value="Nova Conta" />
+      </p>
+    </form>
+
+    <script src="js/ex7_8.js" async defer></script>
+  </body>
+</html>

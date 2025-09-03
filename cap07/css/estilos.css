@@ -1,0 +1,26 @@
+img {
+  float: left;
+  height: 300px;
+  width: 300px;
+}
+
+.padrao {
+  float: left;
+  height: 200px;
+  width: 200px;
+}
+
+h1 {
+  border-bottom-style: inset;
+}
+.entre-letras {
+  letter-spacing: 0.5em;
+}
+.alinha-direita {
+  text-align: right;
+  color: black;
+}
+h3 {
+  text-align: left;
+  color: red;
+}
