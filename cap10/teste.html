@@ -1,0 +1,21 @@
+<ul id="lista-tarefas"></ul>
+<!-- Lista onde as tarefas vão aparecer -->
+<button id="btn-adicionar">Adicionar tarefa</button>
+<!-- Botão para criar uma nova tarefa -->
+
+<script>
+  // 1. Captura o botão pelo ID e adiciona um "ouvinte de evento" de clique
+  document.getElementById("btn-adicionar").addEventListener("click", () => {
+    // 2. Cria um novo elemento <li> para a lista
+    const novaTarefa = document.createElement("li");
+
+    // 3. Define o conteúdo de texto da tarefa
+    novaTarefa.textContent = "Estudar lógica de programação";
+
+    // 4. Captura a lista pelo ID
+    const lista = document.getElementById("lista-tarefas");
+
+    // 5. Adiciona o novo <li> dentro da lista <ul>
+    lista.appendChild(novaTarefa);
+  }); //
+</script>
