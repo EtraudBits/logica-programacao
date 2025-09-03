@@ -1,0 +1,14 @@
+<script>
+  const situacao = (nota, media) => {
+    // funcao usando arrow function (=>) parametros: nota e media que devem esta entre parenteses
+    if (nota >= media) {
+      //se a nota for maio igual a média, o alerta aparecerá como aprovado
+      alert("Aprovado");
+    } else {
+      // caso contrario
+      alert("Reprovado"); // se a nota for menor que a media, o alerta aparecerá reprovado
+    }
+  };
+  const prova1 = Number(prompt("qual Nota: ")); // const prova, chama uma caixa de texto (prompt) para o usuario digitar a nota
+  situacao(prova1, 7); //a função situaçao usa os parametro (argumentos) prova1 (nota) e 7 (media)
+</script>

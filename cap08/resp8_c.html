@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Veterinária Avenida</title>
+    <meta name="description" content="Veterinária" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" href="img/para_exercicios.png" type="image/png" />
+  </head>
+  <body>
+    <img
+      src="img/para_exercicios.png"
+      alt="Veterinária Avenida"
+      class="normal"
+    />
+    <h1>Veterinária Avenida</h1>
+    <form>
+      <p>
+        Valor da Vacina:
+        <input type="number" id="inValor" min="0" step="0.01" required />
+      </p>
+      <p>
+        Possui Convênio:
+        <input type="radio" name="convenio" id="rbSimConvenio" /> Sim
+        <input
+          type="radio"
+          name="convenio"
+          id="rbNaoConvenio"
+          checked
+          autofocus
+        />
+        Não
+      </p>
+      <p>
+        <span>Convênio:</span>
+        <select id="inNao" disabled></select>
+
+        <select id="inSim" class="oculta">
+          <option value="amigoDosAnimais">Amigo dos Animais</option>
+          <option value="saudeAnimal">Saúde Animal</option>
+        </select>
+      </p>
+      <input type="submit" value="Calcular Desconto" />
+    </form>
+
+    <h3 id="outResp1"></h3>
+    <h3 id="outResp2"></h3>
+
+    <script src="js/resp8_c.js" async defer></script>
+  </body>
+</html>

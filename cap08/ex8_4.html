@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pizzaria Avenida - Controle de Pedidos</title>
+    <meta name="description" content="Pizzaria Avenida" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" href="img/Pizza.jpg" type="image/jpg" />
+  </head>
+  <body>
+    <img src="img/Pizza.jpg" alt="Controle de Pedido" class="normal" />
+    <h1>Pizzaria Avenida - Controle de Pedidos</h1>
+    <form>
+      <p>
+        Itém do Pedido:
+        <input type="radio" name="produto" id="rbPizza" checked autofocus />
+        Pizzas
+        <input type="radio" name="produto" id="rbBebidas" />
+        bebidas
+        <span>Itém:</span>
+        <select id="inPizza">
+          <option value="media">Pizza Média</option>
+          <option value="grande">Pizza Grande</option>
+          <option value="familia">Pizza Família</option>
+        </select>
+        <select id="inBebida" class="oculta">
+          <option value="refri">Refrigerante</option>
+          <option value="suco">Jarra de Suco</option>
+          <option value="agua">Água Mineral</option>
+        </select>
+      </p>
+      <p>
+        Detalhes do Itém:
+        <input type="text" id="inDetalhes" class="detalhes" />
+        <input type="submit" value="Adicionar" />
+      </p>
+    </form>
+    <pre></pre>
+
+    <script src="js/ex8_4.js" async defer></script>
+  </body>
+</html>
