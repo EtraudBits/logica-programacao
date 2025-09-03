@@ -1,0 +1,12 @@
+h1 {
+  border-bottom-style: inset;
+}
+
+h5 {
+  font-style: italic;
+}
+
+pre {
+  font-style: italic;
+  font-size: 1.1em;
+}
