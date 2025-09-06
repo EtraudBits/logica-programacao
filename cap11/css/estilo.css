@@ -10,3 +10,17 @@ pre {
   font-style: italic;
   font-size: 1.1em;
 }
+figure {
+  display: inline-block;
+  font-size: 0.7em;
+  margin: 5px;
+}
+
+img.poltrona {
+  width: 24;
+  height: 16px;
+}
+
+.entre-letras {
+  letter-spacing: 0.5em;
+}
